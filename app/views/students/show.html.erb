@@ -1,15 +1,40 @@
+<div class="jumbotron">
+<h2>Pokaż dane studenta</h2>
+<div class="container">
+  <table class="table table-bordered table-striped">
+     <tr>
+       <td>
+         <small>Name</small>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <%= @student.name %>
+       </td>
+     </tr>
 
-<p>
-  <strong>Name:</strong>
-  <%= @student.name %>
-</p>
-
-<p>
-  <strong>Surname:</strong>
-  <%= @student.surname %>
-</p>
-
-<p>
-  <strong>Pesel:</strong>
-  <%= @student.pesel %>
-</p>
+     <tr>
+       <td>
+         <small>Surname</small>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <%= @student.surname %>
+       </td>
+     </tr>
+     <td>
+       <small>Pesel</small>
+     </td>
+   </tr>
+   <tr>
+     <td>
+       <%= @student.pesel %>
+     </td>
+   </tr>
+   </table>
+   <div class="form-group">
+       <%= link_to "", students_path, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-arrow-left" %>
+   </div>
+</div>
+</div>
