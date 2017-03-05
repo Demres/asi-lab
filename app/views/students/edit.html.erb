@@ -1,8 +1,8 @@
 <div class="jumbotron">
 
 <div class="container">
-  <h2>Add new student</h2>
-<%= form_for :student, url: students_path do |f| %>
+  <h2>Edit student</h2>
+<%= form_for @student do |f| %>
 
 <% if @student.errors.any? %>
   <h3 class="text-center">Errors</h3>
@@ -17,7 +17,7 @@
 <div class="form-group">
   <%= f.label :name, class: "col-sm-2 control-label" %>
   <div class="col-sm-10">
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control opacity" %>
     </br>
   </div>
 </div>
@@ -25,7 +25,7 @@
 <div class="form-group">
   <%= f.label :surname, class: "col-sm-2 control-label" %>
   <div class="col-sm-10">
-    <%= f.text_field :surname %>
+    <%= f.text_field :surname, class: "form-control opacity" %>
     </br>
   </div>
 </div>
@@ -33,7 +33,7 @@
 <div class="form-group">
   <%= f.label :pesel, class: "col-sm-2 control-label" %>
   <div class="col-sm-10">
-    <%= f.text_field :pesel %>
+    <%= f.text_field :pesel, class: "form-control opacity" %>
     </br>
   </div>
 </div>
@@ -41,7 +41,7 @@
 			<div class="text-center">
 
   <div class="form-group">
-      <button type="submit" class="btn btn-success btn-circle btn-outline glyphicon glyphicon-plus"></button>
+      <button type="submit" class="btn btn-success btn-circle btn-outline glyphicon glyphicon-ok"></button>
       <%= link_to "", students_path, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-arrow-left" %>
 </div>
   </div>

@@ -1,7 +1,7 @@
 
 <div class="jumbotron">
     <div class="container">
-                <h1>Students</h1>
+                <h2>Students</h2>
                 <table class="table table-bordered table-striped text-center table-background opacity">
                   <tr>
                     <th>Name</th>
@@ -14,9 +14,13 @@
                       <td><%= student.name %></td>
                       <td><%= student.surname %></td>
                       <td><%= student.pesel %></td>
-                      <td><%= link_to 'Show', student_path(student) %></td>
+                      <td> <%= link_to "", student_path(student), class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-search" %>
+                      <%= link_to "", edit_student_path(student), class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-pencil" %>
+                      <%= link_to "", student_path(student) , method: :delete, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-remove" %></td>
                     </tr>
                   <% end %>
                 </table>
+                <%= link_to "", new_student_url, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-plus" %>
+
       </div>
     </div>
