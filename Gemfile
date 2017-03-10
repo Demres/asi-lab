@@ -13,6 +13,8 @@ gem 'rails', '~> 5.0.2'
 #gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+gem 'faker', '~> 1.7.3'
+gem 'will_paginate', '~> 3.1.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.6'

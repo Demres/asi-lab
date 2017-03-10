@@ -22,6 +22,7 @@
                   <% end %>
                 </table>
                 <%= link_to "", new_student_url, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-plus" %>
+                <%= will_paginate @students, class: "text-center my-pagination" %>
 
       </div>
     </div>
