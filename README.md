@@ -4,4 +4,5 @@ Michał Kassjański (zaliczenie)
 
 | Wersja Ruby   | Wersja Rails  | Baza danych  |
 |:-------------:|:-------------:|:-------------:|
-| 2.3.3         | 5.0.2         |   SQLite     |
+| 2.3.3         | 5.0.2         |SQLite (development)|
+|               |               |PostgreSQL (production)|
