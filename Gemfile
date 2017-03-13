@@ -16,12 +16,8 @@ gem 'puma', '~> 3.0'
 gem 'faker', '~> 1.7.3'
 gem 'will_paginate', '~> 3.1.0'
 gem 'devise'
-gem 'bcrypt', '~> 3.1.10', require: false
-if Bundler::WINDOWS
-  gem 'bcrypt-ruby', '~> 3.0.0', require: false
-else
-  gem 'bcrypt', '~> 3.1.10', require: false
-end
+gem 'bcrypt', '~> 3.1.7'
+gem 'paperclip', '~> 5.0.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.6'
