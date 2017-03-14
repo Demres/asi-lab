@@ -3,4 +3,5 @@ class Student < ActiveRecord::Migration[5.0]
     change_table :students do |t|
     add_column :interest, :string
     end
+  end
 end
