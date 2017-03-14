@@ -8,10 +8,10 @@ Michał Kassjański (zaliczenie)
 |               |               |PostgreSQL (production)|
 
 StudentLog przechowuję informacje o studentach:
-imiona
-nazwiska
-zainteresowania
-zdjęcia
+* imiona
+* nazwiska
+* zainteresowania
+* zdjęcia
 
 Dodatkowe Gemy:
 * faker - tworzenie studnetów
