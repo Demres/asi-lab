@@ -1,11 +1,19 @@
 class StudentsController < ApplicationController
 
   def new
-    @student = Student.new
+    if user_signed_in?
+      @student = Student.new
+    else
+      redirect_to new_user_session_path, :notice => "This page is only available to logged-in users"
+    end
   end
 
   def edit
-  @student = Student.find(params[:id])
+    if user_signed_in?
+        @student = Student.find(params[:id])
+    else
+        redirect_to new_user_session_path, :notice => "This page is only available to logged-in users"
+    end
   end
 
   def index
@@ -37,10 +45,14 @@ def create
   end
 
   def destroy
-  @student = Student.find(params[:id])
-  @student.destroy
+    if user_signed_in?
+      @student = Student.find(params[:id])
+      @student.destroy
 
-  redirect_to students_path
+      redirect_to students_path
+    else
+      redirect_to new_user_session_path, :notice => "This page is only available to logged-in users"
+    end
 end
 
 

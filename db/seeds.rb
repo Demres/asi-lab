@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-5.times do |t|
+20.times do |t|
     c = Student.new
     c.name = Faker::Name.first_name
     c.surname = Faker::Name.last_name
-    c.interest = Faker::Number.number(11)
+    c.interest = Faker::Team.name
     c.save
 end
