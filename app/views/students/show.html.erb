@@ -1,8 +1,10 @@
 <div class="jumbotron">
 <h2>Show student data</h2>
 <div class="container">
+      <%= image_tag @student.image.url, :style => "border-radius: 8px; width: 300px; height: 300px; border: 1px solid #ddd"%>
+    </br>
+    </br>
   <table class="table table-bordered table-striped">
-    <%= image_tag @student.image.url %>
      <tr>
        <td>
          <small>Name</small>
@@ -25,12 +27,12 @@
        </td>
      </tr>
      <td>
-       <small>Pesel</small>
+       <small>Interest</small>
      </td>
    </tr>
    <tr>
      <td>
-       <%= @student.pesel %>
+       <%= @student.interest %>
      </td>
    </tr>
    </table>

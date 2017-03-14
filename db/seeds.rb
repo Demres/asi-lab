@@ -5,11 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-50.times do |t|
+
+
+5.times do |t|
     c = Student.new
     c.name = Faker::Name.first_name
     c.surname = Faker::Name.last_name
     c.pesel = Faker::Number.number(11)
-    c.image = Faker::Avatar.image
     c.save
 end
