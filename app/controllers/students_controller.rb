@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
   end
 
   def index
-     @students = Student.paginate(:page => params[:page], :per_page => 10)
+     @students = Student.all.order('created_at DESC').page(params[:page]).per_page(10)
    end
 
   def show
