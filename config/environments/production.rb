@@ -96,7 +96,8 @@ Rails.application.configure do
       s3_region: ENV.fetch('AWS_REGION'),
     }
   }
-
+# papier
+config.paperclip_defaults = { s3_host_name: "s3-#{ENV['AWS_REGION']}.amazonaws.com", }
 
 
 
