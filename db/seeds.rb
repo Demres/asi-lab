@@ -6,11 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+interests = ['Muzyka', 'Rysowanie', 'Malowanie', 'Historia', 'Książki', 'Sztuka', 'Gry', 'Sport']
 
-20.times do |t|
+
+50.times do |t|
     c = Student.new
     c.name = Faker::Name.first_name
     c.surname = Faker::Name.last_name
-    c.interest = Faker::Team.name
+    c.interest = interests.sample
+    c.image = Faker::LoremPixel.image("300x300", false, 'people')
     c.save
 end
