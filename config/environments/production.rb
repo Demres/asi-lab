@@ -85,18 +85,19 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   Faker::Config.locale = :pl
-end
-
-
 
   ## papier
-  ##config.paperclip_defaults = {
-##    storage: :s3,
-##    s3_host_name: "s3-#{ENV['AWS_REGION']}.amazonaws.com",
-##    s3_credentials: {
-##      bucket: ENV.fetch('S3_BUCKET_NAME'),
-##      access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
-##      secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
-##      s3_region: ENV.fetch('AWS_REGION'),
-##    }
-##  }
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_host_name: "s3-#{ENV['AWS_REGION']}.amazonaws.com",
+    s3_credentials: {
+      bucket: ENV.fetch('S3_BUCKET_NAME'),
+      access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
+      secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
+      s3_region: ENV.fetch('AWS_REGION'),
+    }
+  }
+
+
+
+end
