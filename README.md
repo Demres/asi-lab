@@ -7,7 +7,7 @@ Michał Kassjański (zaliczenie)
 | 2.3.3         | 5.0.2         |SQLite (development)|
 |               |               |PostgreSQL (production)|
 
-:mortar_board: StudentLog przechowuję informacje o studentach. Bez zalogowania możemy jedynie zobaczyć listę studentów oraz ich szczegóły. Po zalogowaniu mamy możliwość edytowania, dodawania oraz usuwania studentów.
+:mortar_board: StudentLog przechowuje informacje o studentach. Bez zalogowania możemy jedynie zobaczyć listę studentów oraz ich szczegóły. Po zalogowaniu mamy możliwość edytowania, dodawania oraz usuwania studentów.
 
 Dodatkowe Gemy:
 * faker - tworzenie studentów z polskimi imionami i nazwiskami
