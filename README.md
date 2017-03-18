@@ -10,6 +10,6 @@ Michał Kassjański (zaliczenie)
 :mortar_board: StudentLog przechowuję informacje o studentach. Bez zalogowania możemy jedynie zobaczyć listę studentów oraz ich szczegóły. Po zalogowaniu mamy możliwość edytowania, dodawania oraz usuwania studentów.
 
 Dodatkowe Gemy:
-* faker - tworzenie studnetów z polskimi imionami i nazwiskami
+* faker - tworzenie studentów z polskimi imionami i nazwiskami
 * paperclip - możliwość dodania zdjęcia
   * aws-sdk - [konfiguracja](https://github.com/mkassjanski/asi-lab/blob/master/config/environments/production.rb#L89)
