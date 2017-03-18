@@ -11,7 +11,5 @@ Michał Kassjański (zaliczenie)
 
 Dodatkowe Gemy:
 * faker - tworzenie studnetów z polskimi imionami i nazwiskami
-* devise - logowanie do aplikacji
 * paperclip - możliwość dodania zdjęcia
   * aws-sdk - [konfiguracja](https://github.com/mkassjanski/asi-lab/blob/master/config/environments/production.rb#L89)
-* bootstrap-sas - do tworzenia wyglądu
